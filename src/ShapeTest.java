@@ -8,6 +8,7 @@ public class ShapeTest {
 	
 	public static void main(String[] args){
 		Shape shape = CreateShapeInMemory.createShape(input = new Scanner(System.in));
+		ShapeParamerts.shapeParamerts(shape);
 		CheckInputNameShape.infoShape(shape);
 	}
 }
