@@ -8,13 +8,13 @@ public class CheckInputNameShape {
     public static Shape choosingEnumTypeShape(EnumTypeShape typeShape){
         switch (typeShape){
             case CIRCLE:
-                return new Circle(2);
+                return new Circle();
             case SQUARE:
-                return new Square(2);
+                return new Square();
             case RECTANGLE:
-                return new Rectangle(2,3);
+                return new Rectangle();
             case TRIANGLE:
-                return new Triangle(3,4,120);
+                return new Triangle();
         }
         return null;
     }
