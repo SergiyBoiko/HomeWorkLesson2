@@ -17,15 +17,17 @@ public class Circle extends Shape{
 	public BigDecimal calculatePerimeter() {
 		return new BigDecimal(2*Math.PI*radius);
 	}
-	
-	@Override
+
+		@Override
 	public void readParamertsShape(Scanner s) throws InputMismatchException {
-		// TODO Auto-generated method stub
+		System.out.println("Enter radius:");
+		this.radius = CheckNegativeSide.negativeSide(radius,s);;
 		
 	}
+		
 	@Override
 	public String toString() {
 		String s = String.format("Circle with radius = %.2f",radius);
-		return s;
+		return s+String.format("\nP =%.5f",calculatePerimeter())+String.format("\nS =%.5f",calculateArea());
 	}
 }
